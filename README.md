@@ -1,2 +1,2 @@
-# SortingAlgorithmSet
-排序算法集合
+# super sort
+超级排序
