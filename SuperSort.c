@@ -4,9 +4,9 @@
 #include <string.h>
 #define LEN 100000//数组长度最大取值：256375
 /*超级排序*/
-inline int sort(unsigned *a, int len)
+inline int sort(unsigned int *a, int len)
 {
-	unsigned *b = malloc(sizeof(unsigned) * len);
+	unsigned int *b = malloc(sizeof(unsigned) * len);
 	int sum[256] = { 0 }, sum1[256] = { 0 }, sum2[256] = { 0 }, sum3[256] = { 0 };
 	for (int i = 0; i < len; i++)
 	{
