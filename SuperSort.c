@@ -34,18 +34,17 @@ inline int sort(unsigned int *a, int len)
 	return *a;
 }
 /*打印数组*/
-void printArray(int *a,int len)
+void printArray(int *a, int len)
 {
 	for (int i = 0; i < len; i++)
 	{
-		printf("%d ",a[i]);
+		printf("%d ", a[i]);
 	}
 	printf("\n");
 }
 int main(void)
 {
 	int array[LEN] = { 0 };//只支持整数排序
-	int a;
 	clock_t begin, end;     //捕获时间变量
 	double cost;			//运行时间
 	srand((unsigned)time(NULL));
