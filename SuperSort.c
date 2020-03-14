@@ -4,7 +4,7 @@
 #include <string.h>
 #define LEN 100000//数组长度最大取值：256375
 /*超级排序*/
-inline int sort(unsigned int *a, int len)
+inline int supersort(unsigned int *a, int len)
 {
 	unsigned int *b = malloc(sizeof(unsigned) * len);
 	int sum[256] = { 0 }, sum1[256] = { 0 }, sum2[256] = { 0 }, sum3[256] = { 0 };
@@ -55,7 +55,7 @@ int main(void)
 	//printf("排序前：");
 	//printArray(array, LEN);
 	begin = clock();
-	*array = sort(array, LEN);
+	*array = supersort(array, LEN);
 	end = clock();
 	cost = (double)(end - begin) / CLOCKS_PER_SEC;
 	//printf("排序后：");
